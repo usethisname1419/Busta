@@ -6,7 +6,12 @@ Busts subdomains, directories of each found subdomain, checks all subdomains for
 
 # use
 
-`python3 busta-v1.py <Target> <wordlist>`
+`python3 busta-v2.py <Target> <wordlist>`
+
+
+# Things to know
+
+Busta is just a tool orchestration script - it will check if needed things are installed if not it installs them
 
 # Support 
 
