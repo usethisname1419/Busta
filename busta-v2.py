@@ -54,7 +54,7 @@ def run_amass(domain):
 def run_sublist3r(domain):
     print(f"{Fore.BLUE}[?] Running Sublist3r for subdomain enumeration...")
     logging.info("Running Sublist3r for subdomain enumeration...")
-    result = subprocess.run(["sublist3r", "-d", domain, "-o", "sublist3r_subdomains.txt", "PassiveDNS,CertificateTransparency,Google,Robtex"], capture_output=True, text=True)
+    result = subprocess.run(["sublist3r", "-d", domain, "-o", "sublist3r_subdomains.txt", "-p", "PassiveDNS,CertificateTransparency,Google,Robtex"], capture_output=True, text=True)
     if result.returncode == 0:
         print(f"{Fore.GREEN}[+] Sublist3r subdomain enumeration completed!")
         logging.info("Sublist3r subdomain enumeration completed.")
